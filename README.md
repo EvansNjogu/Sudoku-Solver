@@ -24,22 +24,22 @@ The input Sudoku puzzle image is processed using OpenCV to detect and extract th
 
 1. Convert image to grayscale.
 
-<img src="assets/grayscale.png" alt="Original Point Cloud" width="400">
+<img src="assets/grayscale.png" alt="Grayscale" width="400">
 
 2. Apply Gaussian Blur and Adaptive Thresholding.
 
-<img src="assets/reframe.png" alt="Original Point Cloud" width="400">
+<img src="assets/reframe.png" alt="Gaussian Blur" width="400">
 
 3. Detect Contours to identify the Sudoku grid.
 
-<img src="assets/contour.png" alt="Original Point Cloud" width="400">
+<img src="assets/contour.png" alt="Contour" width="400">
 
 4. Perform Perspective Transform to get a **450x450** pixel Sudoku board.
 
 ## Solving the Sudoku
 Each Sudoku cell is cropped and classified using the trained CNN model. The extracted digits are then used to form a 9x9 Sudoku grid, which is solved using Backtracking Algorithm.
 
-<img src="assets/solved.png" alt="Original Point Cloud" width="400">
+<img src="assets/solved.png" alt="Solved Sudoku" width="400">
 
 
 ## Results
